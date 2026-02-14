@@ -1,0 +1,11 @@
+# Singularity Delta Requirements
+# Pure Python - No external dependencies required!
+
+# Optional: Development dependencies
+# Uncomment if you want enhanced development tools
+
+# pytest>=7.0.0              # Advanced testing framework
+# black>=22.0.0              # Code formatting
+# pylint>=2.15.0             # Code linting
+# mypy>=0.991                # Type checking
+# jsonschema>=4.0.0          # JSON schema validation (future feature)

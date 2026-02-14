@@ -1,0 +1,51 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (included in image)
+# README.md
+# CONTRIBUTING.md
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Logs (will be generated)
+logs/*.log
+
+# Output files (will be generated)
+output/*.json
+output/*.html
+
+# Tests (optional - comment out if you want tests in container)
+# tests/
+
+# OS
+.DS_Store
+Thumbs.db
