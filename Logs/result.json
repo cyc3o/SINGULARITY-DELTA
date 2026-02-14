@@ -1,0 +1,101 @@
+{
+  "engine": {
+    "name": "Singularity-Delta",
+    "version": "1.0.0",
+    "run_id": "8d86c03f-2cda-4361-b91c-b2c6e3876f37",
+    "timestamp": "2026-02-14T01:43:37.321438"
+  },
+  "input": {
+    "path": "/storage/emulated/0/X50005/singularity_delta/datasets/INVALID_TEST.json",
+    "filename": "INVALID_TEST.json",
+    "size_bytes": 488,
+    "sha256": "378601f82ac3c4328d6cb1664de3847e48464c7102c0ecfe1678b34d66c64221"
+  },
+  "result": {
+    "target": "INVALID_SYSTEM",
+    "verdict": "FAILED",
+    "risk": "CRITICAL",
+    "score": 25,
+    "confidence": 1.0,
+    "findings": [
+      {
+        "id": "AX-004",
+        "severity": "LOW",
+        "message": "No metadata section found",
+        "category": "COMPLETENESS",
+        "rule": "MetadataCompletenessRule",
+        "details": {
+          "recommended_fields": [
+            "version",
+            "created",
+            "author"
+          ]
+        }
+      },
+      {
+        "id": "CX-001",
+        "severity": "CRITICAL",
+        "message": "Duplicate decision IDs found: DEC-001",
+        "category": "CONSISTENCY",
+        "rule": "DecisionConsistencyRule",
+        "details": {
+          "duplicate_ids": [
+            "DEC-001"
+          ],
+          "total_decisions": 3
+        }
+      },
+      {
+        "id": "CX-002",
+        "severity": "HIGH",
+        "message": "Invalid constraint references: broken_ref → DEC-999",
+        "category": "CONSISTENCY",
+        "rule": "ConstraintReferenceRule",
+        "details": {
+          "invalid_references": [
+            "broken_ref → DEC-999"
+          ],
+          "valid_ids": [
+            "DEC-001",
+            "DEC-002"
+          ]
+        }
+      },
+      {
+        "id": "CX-004",
+        "severity": "LOW",
+        "message": "Value range violations detected",
+        "category": "CONSISTENCY",
+        "rule": "ValueRangeConsistencyRule",
+        "details": {
+          "violations": [
+            "Decision 'DEC-002' priority 150 outside range [0-100]",
+            "Decision 'DEC-002' confidence 2.5 outside range [0-1]"
+          ]
+        }
+      },
+      {
+        "id": "SX-005",
+        "severity": "LOW",
+        "message": "Empty critical values detected",
+        "category": "STRUCTURE",
+        "rule": "EmptyValuesRule",
+        "details": {
+          "empty_values": [
+            "Decision 'DEC-002' has empty description"
+          ]
+        }
+      }
+    ],
+    "engine_version": "1.0.0",
+    "timestamp": "2026-02-14T01:43:37.321438",
+    "metadata": {
+      "total_findings": 5,
+      "critical": 1,
+      "high": 1,
+      "medium": 0,
+      "low": 3,
+      "rules_executed": 13
+    }
+  }
+}

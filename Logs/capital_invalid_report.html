@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SINGULARITY-DELTA REPORT</title>
+<style>
+body {
+    font-family: 'Courier New', monospace;
+    background: #0d1117;
+    color: #c9d1d9;
+    padding: 30px;
+    margin: 0;
+}
+h1, h2 {
+    color: #58a6ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 32px;
+    border-bottom: 3px solid #58a6ff;
+    padding-bottom: 10px;
+}
+.card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border: 2px solid #30363d;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th, td {
+    border: 1px solid #30363d;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background: #21262d;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.verdict {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.pass { 
+    color: #3fb950; 
+    background: rgba(63, 185, 80, 0.1);
+    border: 2px solid #3fb950;
+}
+.fail { 
+    color: #f85149; 
+    background: rgba(248, 81, 73, 0.1);
+    border: 2px solid #f85149;
+}
+.warn { 
+    color: #d29922; 
+    background: rgba(210, 153, 34, 0.1);
+    border: 2px solid #d29922;
+}
+.severity-critical { 
+    color: #f85149; 
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+.severity-high { 
+    color: #f97583; 
+    text-transform: uppercase;
+}
+.severity-medium { 
+    color: #d29922; 
+    text-transform: uppercase;
+}
+.severity-low { 
+    color: #79c0ff; 
+    text-transform: uppercase;
+}
+.severity-info { 
+    color: #8b949e; 
+    text-transform: uppercase;
+}
+.metadata {
+    background: #0d1117;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+}
+.score {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 0;
+    color: #58a6ff;
+    text-shadow: 0 0 20px rgba(88, 166, 255, 0.5);
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+.stat-box {
+    background: #0d1117;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #30363d;
+}
+.stat-label {
+    font-size: 12px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>🔬 SINGULARITY-DELTA ANALYSIS REPORT</h1>
+
+<div class="card">
+<h2>📊 SUMMARY</h2>
+<table>
+<tr><th>PROPERTY</th><th>VALUE</th></tr>
+<tr><td>TARGET</td><td>INVALID_SYSTEM</td></tr>
+<tr><td>TIMESTAMP</td><td>2026-02-13T22:12:05.153905</td></tr>
+<tr><td>ENGINE VERSION</td><td>1.0.0</td></tr>
+<tr><td>TOTAL FINDINGS</td><td>5</td></tr>
+</table>
+
+<div class="score">📈 25.0/100</div>
+
+<div class="verdict fail">
+❌ VERDICT: FAILED
+</div>
+
+<div class="stats-grid">
+    <div class="stat-box">
+        <div class="stat-label">RISK LEVEL</div>
+        <div class="stat-value">🚨 CRITICAL</div>
+    </div>
+    <div class="stat-box">
+        <div class="stat-label">CONFIDENCE</div>
+        <div class="stat-value">🎯 100%</div>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<h2>🔍 FINDINGS (5)</h2>
+<table>
+<tr>
+    <th>ID</th>
+    <th>SEVERITY</th>
+    <th>DESCRIPTION</th>
+</tr>
+
+            <tr>
+                <td>AX-004</td>
+                <td><span class="severity-low">💡 LOW</span></td>
+                <td>NO METADATA SECTION FOUND</td>
+            </tr>
+                
+            <tr>
+                <td>CX-001</td>
+                <td><span class="severity-critical">🚨 CRITICAL</span></td>
+                <td>DUPLICATE DECISION IDS FOUND: DEC-001</td>
+            </tr>
+                
+            <tr>
+                <td>CX-002</td>
+                <td><span class="severity-high">⚠️ HIGH</span></td>
+                <td>INVALID CONSTRAINT REFERENCES: BROKEN_REF → DEC-999</td>
+            </tr>
+                
+            <tr>
+                <td>CX-004</td>
+                <td><span class="severity-low">💡 LOW</span></td>
+                <td>VALUE RANGE VIOLATIONS DETECTED</td>
+            </tr>
+                
+            <tr>
+                <td>SX-005</td>
+                <td><span class="severity-low">💡 LOW</span></td>
+                <td>EMPTY CRITICAL VALUES DETECTED</td>
+            </tr>
+                
+</table>
+</div>
+
+<div class="card">
+<h2>📋 METADATA</h2>
+<pre class="metadata">{
+  "TOTAL_FINDINGS": 5,
+  "CRITICAL": 1,
+  "HIGH": 1,
+  "MEDIUM": 0,
+  "LOW": 3,
+  "RULES_EXECUTED": 13
+}</pre>
+</div>
+
+<div style="text-align: center; margin-top: 30px; padding: 20px; border-top: 2px solid #30363d;">
+<p style="color: #8b949e; text-transform: uppercase; letter-spacing: 1px;">
+⚡ POWERED BY SINGULARITY-DELTA ENGINE V1.0.0 ⚡
+</p>
+</div>
+
+</body>
+</html>
