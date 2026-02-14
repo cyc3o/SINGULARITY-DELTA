@@ -1,0 +1,26 @@
+{
+  "system_name": "INVALID_SYSTEM",
+  "decisions": [
+    {
+      "id": "DEC-001",
+      "description": "First decision"
+    },
+    {
+      "id": "DEC-001",
+      "description": "Duplicate ID - this should fail!"
+    },
+    {
+      "id": "DEC-002",
+      "description": "",
+      "priority": 150,
+      "confidence": 2.5
+    }
+  ],
+  "constraints": {
+    "broken_ref": {
+      "type": "test",
+      "applies_to": ["DEC-999"],
+      "value": "references non-existent decision"
+    }
+  }
+}
