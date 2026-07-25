@@ -17,8 +17,11 @@ INCOMPLETE, AND WHERE THE STRUCTURE DOESN'T HOLD — BEFORE ANY OF IT REACHES PR
 
 ---
 
+<div align="center">
 
-## INSTALLb <div align="center">
+## INSTALL
+
+</div>
 
 ```bash
 git clone https://github.com/cyc3o/CoreSync
@@ -26,12 +29,18 @@ cd CoreSync
 python main.py
 ```
 
-ZERO DEPENDENCIES RUNS ON PURE PYTHON 3.12+ NOTHING ELSE TO SET UP
+<div align="center">
+
+## REQUIREMENTS
+
+PYTHON 3.12+
+
+NO EXTERNAL DEPENDENCIES
+
+READY TO RUN
 
 ---
 
-<div align="center">
-
-**CORESYNC** — CREATED BY VISHAL THAKUR
+**MADE BY VISHAL THAKUR**
 
 </div>
