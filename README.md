@@ -1,6 +1,6 @@
 <div align="center">
 
-# CORESYNC
+# 🇨 🇴 🇷 🇪 🇸 🇾 🇳 🇨 
 
 **A VERIFICATION ENGINE FOR DECISION-BASED SYSTEMS.**
 
