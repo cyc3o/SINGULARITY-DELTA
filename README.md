@@ -30,17 +30,6 @@ python main.py
 
 ZERO DEPENDENCIES. RUNS ON PURE PYTHON 3.12+, NOTHING ELSE TO SET UP.
 
-OPTIONAL DEV TOOLS: `pip install -r requirements.txt`
-
-## USAGE
-
-```bash
-python main.py
-# SELECT "1" TO ANALYZE A SYSTEM
-# PICK A JSON FILE FROM datasets/
-# REVIEW THE HTML REPORT IN logs/
-```
-
 ---
 
 ## LICENSE
