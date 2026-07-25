@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🇨 🇴 🇷 🇪 🇸 🇾 🇳 🇨 
+# 𝐂ᴏʀᴇ𝐒ʏɴᴄ
 
 **A VERIFICATION ENGINE FOR DECISION-BASED SYSTEMS.**
 
